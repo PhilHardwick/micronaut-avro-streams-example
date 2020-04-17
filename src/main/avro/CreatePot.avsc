@@ -1,0 +1,9 @@
+{
+  "type" : "record",
+  "namespace" : "technology.wick.pots",
+  "name" : "CreatePot",
+  "fields" : [
+    {"name": "accountId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name": "name", "type": "string"}
+  ]
+}

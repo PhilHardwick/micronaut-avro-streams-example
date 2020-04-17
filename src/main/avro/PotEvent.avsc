@@ -1,0 +1,12 @@
+{
+  "type" : "record",
+  "namespace" : "technology.wick.pots",
+  "name" : "PotEvent",
+  "fields" : [
+    {"name": "accountId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name": "potId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name": "name", "type": "string"},
+    {"name": "balance", "type": "long"},
+    {"name": "createdAt", "type": {"type": "long", "logicalType": "timestamp-millis"}}
+  ]
+}

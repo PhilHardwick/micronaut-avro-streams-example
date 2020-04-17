@@ -1,0 +1,17 @@
+{
+  "type" : "record",
+  "namespace" : "technology.wick.pots.balance",
+  "name" : "PotsBalanceState",
+  "fields" : [
+    {"name": "accountId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name": "pots", "type": {"type": "map", "values": {
+      "type" : "record",
+      "name": "PotBalance",
+      "fields": [
+        {"name": "potId", "type": {"type": "string", "logicalType": "uuid"}},
+        {"name": "balance", "type": "long"}
+      ]
+      }}
+    }
+  ]
+}

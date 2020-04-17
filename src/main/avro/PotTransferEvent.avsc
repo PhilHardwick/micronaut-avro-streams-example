@@ -1,0 +1,11 @@
+{
+  "type" : "record",
+  "namespace" : "technology.wick.pots.transfers",
+  "name" : "PotTransferEvent",
+  "fields" : [
+    {"name": "transferId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name": "srcPotId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name": "destPotId", "type": {"type": "string", "logicalType": "uuid"}},
+    {"name": "amount", "type": "long"}
+  ]
+}
